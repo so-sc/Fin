@@ -33,19 +33,44 @@ export default function Component() {
             </h2>
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8">
               <Card>
-                <CardHeader>
+                <CardHeader className="flex items-center gap-2 p-0 px-6 pt-6">
                   <CurrencyIcon className="w-6 h-6" />
-                  <h3 className="text-xl font-bold">Financial Education</h3>
+                  <h3 className="text-xl font-bold">Contracts</h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-gray-500">
-                    Unlocking Opportunities with Comprehensive Financial
-                    Education.
+                    Transforming Text into Tailored Legal Agreements with Ease.
+                  </p>
+                  <Link className="text-blue-500 mt-4" href="/contract">
+                    Learn more
+                  </Link>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader className="flex items-center gap-2 p-0 px-6 pt-6">
+                  <CurrencyIcon className="w-6 h-6" />
+                  <h3 className="text-xl font-bold">Micro Loans</h3>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-gray-500">
+                    Empowering Financial Inclusion, One Small Loan at a Time.
                   </p>
                 </CardContent>
               </Card>
               <Card>
-                <CardHeader>
+                <CardHeader className="flex items-center gap-2 p-0 px-6 pt-6">
+                  <CurrencyIcon className="w-6 h-6" />
+                  <h3 className="text-xl font-bold">Pots</h3>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-base text-gray-500">
+                    Collaborative Money Pots for Seamless and Shared Financial
+                    Goals.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader className="flex items-center gap-2 p-0 px-6 pt-6">
                   <CurrencyIcon className="w-6 h-6" />
                   <h3 className="text-xl font-bold">
                     Intelligent Investment Planning
@@ -58,38 +83,20 @@ export default function Component() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
-                <CardHeader>
+              <Card className="col-span-2">
+                <CardHeader className="flex items-center gap-2 p-0 px-6 pt-6">
                   <CurrencyIcon className="w-6 h-6" />
-                  <h3 className="text-xl font-bold">Contracts</h3>
+                  <h3 className="text-xl font-bold">Financial Education</h3>
                 </CardHeader>
                 <CardContent>
                   <p className="text-base text-gray-500">
-                    Transforming Text into Tailored Legal Agreements with Ease.
+                    Navigate the complexities of personal finance with our
+                    comprehensive educational platform. From budgeting
+                    fundamentals to savvy investment insights.
                   </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CurrencyIcon className="w-6 h-6" />
-                  <h3 className="text-xl font-bold">Micro Loans</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base text-gray-500">
-                    Empowering Financial Inclusion, One Small Loan at a Time.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CurrencyIcon className="w-6 h-6" />
-                  <h3 className="text-xl font-bold">Pots</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base text-gray-500">
-                    Collaborative Money Pots for Seamless and Shared Financial
-                    Goals.
-                  </p>
+                  <Link className="text-blue-500 mt-4" href="/education">
+                    Learn more
+                  </Link>
                 </CardContent>
               </Card>
             </div>

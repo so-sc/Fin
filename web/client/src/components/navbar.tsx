@@ -11,9 +11,9 @@ export default function Navbar() {
       <nav className="ml-auto flex items-center gap-4 sm:gap-6">
         <Link
           className="text-sm font-medium hover:underline underline-offset-4"
-          href="#"
+          href="/education"
         >
-          Services
+          Educate
         </Link>
         <Link
           className="text-sm font-medium hover:underline underline-offset-4"
