@@ -8,14 +8,14 @@ export default function Component() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover">
+        <section className="bg-image w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-no-repeat">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
                   Your Friendly Financial App.
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
                   Helping you make informed decisions for a brighter financial
                   future.
                 </p>
@@ -32,7 +32,7 @@ export default function Component() {
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8">
               <Card>
                 <CardHeader>
-                  <GraduationCapIcon className="w-6 h-6" />
+                  <CurrencyIcon className="w-6 h-6" />
                   <h3 className="text-xl font-bold">Financial Education</h3>
                 </CardHeader>
                 <CardContent>
@@ -69,7 +69,7 @@ export default function Component() {
               </Card>
               <Card>
                 <CardHeader>
-                  <GraduationCapIcon className="w-6 h-6" />
+                  <CurrencyIcon className="w-6 h-6" />
                   <h3 className="text-xl font-bold">Micro Loans</h3>
                 </CardHeader>
                 <CardContent>
@@ -80,7 +80,7 @@ export default function Component() {
               </Card>
               <Card>
                 <CardHeader>
-                  <GraduationCapIcon className="w-6 h-6" />
+                  <CurrencyIcon className="w-6 h-6" />
                   <h3 className="text-xl font-bold">Pots</h3>
                 </CardHeader>
                 <CardContent>
