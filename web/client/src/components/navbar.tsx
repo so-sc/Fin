@@ -1,4 +1,3 @@
-import { DollarSignIcon } from "@/app/page"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
