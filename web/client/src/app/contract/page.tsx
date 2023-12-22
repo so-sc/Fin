@@ -8,7 +8,7 @@ import { financialContract } from "@/lib/contract"
 import jsPDF from "jspdf"
 import { FormEvent, useState } from "react"
 
-export default function Contract() {
+function ContractPage() {
   const [contractDetails, setContractDetails] = useState({
     receiverName: "",
     amount: "",
@@ -117,3 +117,5 @@ export default function Contract() {
     </main>
   )
 }
+
+export default ContractPage
