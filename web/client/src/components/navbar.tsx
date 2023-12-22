@@ -66,25 +66,25 @@ export default function Navbar() {
             className="border rounded-full cursor-pointer p-1"
             href="https://finvest-rudra.vercel.app"
           >
-            en
+            A
           </Link>
           <Link
             className="border rounded-full cursor-pointer p-1"
             href="https://finvest--rudra-vercel-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=kn&_x_tr_hl=en-US&_x_tr_pto=wapp"
           >
-            ka
+            ಕ
           </Link>
           <Link
             className="border rounded-full cursor-pointer p-1"
             href="https://finvest--rudra-vercel-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=hi&_x_tr_hl=en-US&_x_tr_pto=wapp&_x_tr_hist=true"
           >
-            hi
+            क
           </Link>
           <Link
             className="border rounded-full cursor-pointer p-1"
             href="https://finvest--rudra-vercel-app.translate.goog/?_x_tr_sl=en&_x_tr_tl=ml&_x_tr_hl=en-US&_x_tr_pto=wapp&_x_tr_hist=true"
           >
-            ml
+            ക
           </Link>
         </div>
         {/* <ModeToggle /> */}

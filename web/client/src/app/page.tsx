@@ -23,6 +23,11 @@ export default function Component() {
               <Button asChild>
                 <Link href="/education">Get Started</Link>
               </Button>
+              <Button asChild variant="outline">
+                <Link href="https://text-2-speech-rudra.netlify.app/">
+                  Text to Speech
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
