@@ -10,7 +10,6 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -24,6 +23,7 @@ export default function Onboarding() {
     area: "0",
     phone: "",
     disablity: "0",
+    experience: "0",
   })
 
   function onFormSubmit(e: FormEvent<HTMLFormElement>) {
@@ -167,6 +167,32 @@ export default function Onboarding() {
                       <SelectItem value="1">Physical</SelectItem>
                       <SelectItem value="2">Hearing</SelectItem>
                       <SelectItem value="3">Visual</SelectItem>
+                    </SelectGroup>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="experience">Experience in Investing</Label>
+              <div className="space-y-2">
+                <Select
+                  defaultValue="0"
+                  onValueChange={(e) => {
+                    setDetails({
+                      ...details,
+                      experience: e,
+                    })
+                  }}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder="Experience" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectGroup>
+                      <SelectItem value="0">0 years</SelectItem>
+                      <SelectItem value="1">1-3 years</SelectItem>
+                      <SelectItem value="2">4-10 years</SelectItem>
+                      <SelectItem value="3">More than 10 years</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>

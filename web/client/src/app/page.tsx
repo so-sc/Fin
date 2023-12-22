@@ -6,16 +6,16 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-100">
+    <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         <section className="bg-image w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-no-repeat">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-white">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-foreground">
                   Your Friendly Financial App.
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
+                <p className="mx-auto max-w-[700px] text-foreground/50 md:text-xl">
                   Helping you make informed decisions for a brighter financial
                   future.
                 </p>
@@ -26,7 +26,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center">
               Our Services
@@ -38,7 +38,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Contracts</h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-foreground/50">
                     Transforming Text into Tailored Legal Agreements with Ease.
                   </p>
                   <Link className="text-blue-500 mt-4" href="/contract">
@@ -52,7 +52,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Micro Loans</h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-foreground/50">
                     Empowering Financial Inclusion, One Small Loan at a Time.
                   </p>
                 </CardContent>
@@ -63,7 +63,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Pots</h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-foreground/50">
                     Collaborative Money Pots for Seamless and Shared Financial
                     Goals.
                   </p>
@@ -77,7 +77,7 @@ export default function Component() {
                   </h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-foreground/50">
                     We help you make the best investment decisions based on your
                     personal financial goals.
                   </p>
@@ -89,7 +89,7 @@ export default function Component() {
                   <h3 className="text-xl font-bold">Financial Education</h3>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-base text-gray-500">
+                  <p className="text-base text-foreground/50">
                     Navigate the complexities of personal finance with our
                     comprehensive educational platform. From budgeting
                     fundamentals to savvy investment insights.
