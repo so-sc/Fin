@@ -1,11 +1,10 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-
-import 'onboard/onboarding.dart';
+import 'package:finvest/pages/edu/home_screen.dart';
+import 'package:finvest/pages/onboard/onboarding.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
@@ -17,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const OnBoardingScreen()),
+        MaterialPageRoute(builder: (context) => HomeScreen()),//OnBoardingScreen
       );
     });
   }

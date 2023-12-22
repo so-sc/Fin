@@ -4,9 +4,12 @@ import 'package:finvest/components/header.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:finvest/components/const.dart';
 
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -31,48 +34,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: PreferredSize(
-        preferredSize: Size(double.infinity, 100),
-        child: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Container(
-                margin: new EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 20
-                ),
-                height: 44,
-                width: 44,
-                child: FlatButton(
-                  padding: EdgeInsets.all(0),
-                  color: Colors.white.withOpacity(0.3),
-                  child: Icon(Icons.menu, color: Colors.white),
-                  shape: new RoundedRectangleBorder(
-                    borderRadius: new BorderRadius.circular(10.0),
-                  ),
-                  onPressed: () {
-                    debugPrint("Menu pressed");
-                  },
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
       body: Stack(
         children: <Widget>[
           Header(),
           Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: ListView(
               scrollDirection: Axis.vertical,
               children: <Widget>[
-
-                SizedBox(height: 20 * 2),
-
+                const SizedBox(height: 20 * 2),
                 // 1. Welcome User
                 const Text("Welcome back\nStudent!",
                   style: TextStyle(
@@ -97,13 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Constants.textDark,
                     ),
                     decoration: InputDecoration(
-                      contentPadding: EdgeInsets.all(20.0),
+                      contentPadding: const EdgeInsets.all(20.0),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(color: Colors.white),
+                        borderSide: const BorderSide(color: Colors.white),
                         borderRadius: BorderRadius.circular(20.0),
                       ),
                       hintText: "Search courses",
@@ -116,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           debugPrint("Search pressed");
                         },
                       ),
-                      hintStyle: TextStyle(
+                      hintStyle: const TextStyle(
                         fontSize: 15.0,
                       ),
                     ),
@@ -132,10 +105,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: <Widget>[
                     Container(
                       width: double.infinity,
-                      padding: EdgeInsets.all(30.0),
+                      padding: const EdgeInsets.all(30.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30.0),
-                        color: Color(0xFFFEF3F3),
+                        color: const Color(0xFFFEF3F3),
                       ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -149,18 +122,21 @@ class _HomeScreenState extends State<HomeScreen> {
                                 color: Constants.textDark
                             ),
                           ),
-
-                          SizedBox(height: 10.0),
-
+                          const SizedBox(height: 10.0),
                           // Categories Button
                           Container(
                             width: 150,
-                            child: FlatButton(
-                              padding: EdgeInsets.all(10.0),
-                              color: Constants.salmonMain,
+                            child: TextButton(
+                              style: TextButton.styleFrom(
+                                padding: const EdgeInsets.all(10.0),
+                                backgroundColor: Constants.salmonMain,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(13.0),
+                                ),
+                              ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.start,
-                                children: <Widget>[
+                                children: const <Widget>[
                                   Expanded(
                                     child: Center(
                                       child:
@@ -171,18 +147,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ),
                                     ),
                                   ),
-                                  Icon(Icons.arrow_forward, color: Colors.white, size: 16),
                                 ],
                               ),
-                              shape: new RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(13.0),
-                              ),
                               onPressed: () {
-                                // Navigate to Learning
                                 debugPrint("Pressed here");
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => CategoryScreen()),
+                                  MaterialPageRoute(builder: (context) => const CategoryScreen()),
                                 );
                               },
                             ),
@@ -190,20 +161,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
                     ),
-
-                    // Image Researching Girl
-                    Positioned(
-                      right: 0,
-                      bottom: 0,
-                      child: Image.asset("assets/images/researching.png",
-                        width: 200,
-                        height: 104,
-                      ),
-                    ),
                   ],
                 ),
 
-                SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
 
                 Text("Courses in progress",
                     style: TextStyle(

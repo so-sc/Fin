@@ -3,10 +3,11 @@ import 'package:finvest/components/header_inner.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
 import 'package:finvest/components/const.dart';
 
 class CategoryScreen extends StatefulWidget {
+  const CategoryScreen({Key? key}) : super(key: key);
+
   @override
   _CategoryScreenState createState() => _CategoryScreenState();
 }
@@ -53,7 +54,6 @@ class _CategoryScreenState extends State<CategoryScreen> {
                     Navigator.pop(context);
                   },
                 ),
-
               ),
               Container(
                 margin: EdgeInsets.symmetric(

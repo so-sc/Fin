@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'const.dart';
 
 class HeaderInner extends StatelessWidget {
-  const HeaderInner({super.key});
+  const HeaderInner({Key? key}) : super(key: key);
 
 
   @override

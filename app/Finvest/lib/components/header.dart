@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/widgets.dart';
 
+import 'package:finvest/components/const.dart';
+
+
 class Header extends StatelessWidget {
 
   @override

@@ -11,7 +11,7 @@ class CardCourses extends StatelessWidget {
   final double percentage;
   final Color color;
 
-  CardCourses({
+  const CardCourses({
     Key? key,
     required this.image,
     required this.title,
