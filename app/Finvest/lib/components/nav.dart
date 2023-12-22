@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-
 import 'package:finvest/pages/edu/home_screen.dart';
 
 
@@ -52,20 +51,6 @@ class _BottomTabsState extends State<BottomTabs> {
                     icon: Icons.insert_chart,
                     text: 'Invest',
                   ),
-                  // GButton(
-                  //   icon: Icons.audio,
-                  //   text: 'Invest',
-                  //   textStyle: TextStyle(
-                  //     fontSize: 16,
-                  //     fontWeight: FontWeight.w500,
-                  //     color: Colors.black,
-                  //     fontFamily: 'Roboto',
-                  //   ),
-                  //
-                  //   iconActiveColor: Colors.indigo,
-                  //   iconColor: Colors.grey,
-                  //   backgroundColor: Colors.white,
-                  // ),
                   GButton(
                     icon: Icons.menu_book_rounded,
                     text: 'Education',
@@ -79,13 +64,16 @@ class _BottomTabsState extends State<BottomTabs> {
             ),
           ),
           Positioned(
-            top: 20,
+            bottom: 90,
             right: 20,
             child: FloatingActionButton(
               onPressed: () {
 
               },
-              child: const Icon(Icons.message_outlined),
+              child: const Icon(
+                  Icons.audiotrack,
+                  color: Colors.white,
+              ),
             ),
           ),
         ],

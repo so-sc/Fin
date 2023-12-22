@@ -90,7 +90,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
               SizedBox(height: Constants.mainPadding * 3),
 
               const Center(
-                child: Text("UI/UX\nCourses",
+                child: Text("Financial Stability\nCourses",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 34,
@@ -119,28 +119,20 @@ class _CategoryScreenState extends State<CategoryScreen> {
                   shrinkWrap: true,
                   children: <Widget>[
                     CardCourses(
-                      image: Image.asset("assets/images/icon_1.png", width: 40, height: 40),
+                      image: Image.asset("assets/images/personal-finance.jpg", width: 40, height: 40),
                       color: Constants.lightPink,
-                      title: "Adobe XD Prototyping",
-                      hours: "10 hours, 19 lessons",
-                      progress: "25%",
-                      percentage: 0.25,
+                      title: "Personal Finance",
+                      hours: "8 hours, 15 lessons",
+                      progress: "0%",
+                      percentage: 0.00,
                     ),
                     CardCourses(
-                      image: Image.asset("assets/images/icon_2.png", width: 40, height: 40),
+                      image: Image.asset("assets/images/debt-management.jpg", width: 40, height: 40),
                       color: Constants.lightYellow,
-                      title: "Sketch shortcuts and tricks",
-                      hours: "10 hours, 19 lessons",
-                      progress: "50%",
-                      percentage: 0.5,
-                    ),
-                    CardCourses(
-                      image: Image.asset("assets/images/icon_3.png", width: 40, height: 40),
-                      color: Constants.lightViolet,
-                      title: "UI Motion Design in After Effects",
-                      hours: "10 hours, 19 lessons",
-                      progress: "75%",
-                      percentage: 0.75,
+                      title: "Debt Management",
+                      hours: "15 hours, 38 lessons",
+                      progress: "0%",
+                      percentage: 0.00,
                     ),
                   ],
                 ),

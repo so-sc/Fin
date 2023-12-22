@@ -183,28 +183,58 @@ class _HomeScreenState extends State<HomeScreen> {
                   shrinkWrap: true,
                   children: <Widget>[
                     CardCourses(
-                      image: Image.asset("assets/images/icon_1.png", width: 40, height: 40),
+                      image: Image.asset("assets/images/investment.jpg", width: 40, height: 40),
                       color: Constants.lightPink,
-                      title: "Adobe XD Prototyping",
+                      title: "Investment Courses",
                       hours: "10 hours, 19 lessons",
                       progress: "25%",
                       percentage: 0.25,
                     ),
                     CardCourses(
-                      image: Image.asset("assets/images/icon_2.png", width: 40, height: 40),
+                      image: Image.asset("assets/images/financial.jpg", width: 40, height: 40),
                       color: Constants.lightYellow,
-                      title: "Sketch shortcuts and tricks",
+                      title: "Financial Planning",
                       hours: "10 hours, 19 lessons",
                       progress: "50%",
                       percentage: 0.5,
                     ),
+
+                  ],
+                ),
+
+                const SizedBox(height: 20.0),
+
+                Text("New course",
+                    style: TextStyle(
+                      color: Constants.textDark,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    )
+                ),
+
+                SizedBox(height: 20.0),
+
+                // List of courses
+                ListView(
+                  scrollDirection: Axis.vertical,
+                  physics: NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  children: <Widget>[
                     CardCourses(
-                      image: Image.asset("assets/images/icon_3.png", width: 40, height: 40),
-                      color: Constants.lightViolet,
-                      title: "UI Motion Design in After Effects",
-                      hours: "10 hours, 19 lessons",
-                      progress: "75%",
-                      percentage: 0.75,
+                      image: Image.asset("assets/images/personal-finance.jpg", width: 40, height: 40),
+                      color: Constants.lightPink,
+                      title: "Personal Finance",
+                      hours: "8 hours, 15 lessons",
+                      progress: "0%",
+                      percentage: 0.00,
+                    ),
+                    CardCourses(
+                      image: Image.asset("assets/images/debt-management.jpg", width: 40, height: 40),
+                      color: Constants.lightYellow,
+                      title: "Debt Management",
+                      hours: "15 hours, 38 lessons",
+                      progress: "0%",
+                      percentage: 0.00,
                     ),
                   ],
                 ),

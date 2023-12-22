@@ -19,14 +19,15 @@ db.on('open', () => console.log("Mongodb is connected."))
 app.use(express.json())
 
 app.use(cors({
-    origin: '*', // process.env.DOMAIN,
+    origin: '*', // ['http://localhost:3000', 'http://localhost:7000',], // process.env.DOMAIN,
+    optionsSuccessStatus: 200,
     methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
     credentials: true,
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization', 'Access-Control-Allow-Origin', 'Access-Control-Allow-Methods', 'Access-Control-Allow-Headers'],
 }));
 
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*'); //process.env.DOMAIN);
+    res.header('Access-Control-Allow-Origin', '*',); // ['http://localhost:3000', 'http://localhost:7000',]); //process.env.DOMAIN);
     res.header('Access-Control-Allow-Methods', 'GET, HEAD, PUT, PATCH, POST, DELETE'); 
     res.header('Access-Control-Allow-Headers', 'Content-Type, Origin, X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers'); 
     next();
