@@ -20,7 +20,9 @@ export default function Component() {
                   future.
                 </p>
               </div>
-              <Button>Get Started</Button>
+              <Button asChild>
+                <Link href="/education">Get Started</Link>
+              </Button>
             </div>
           </div>
         </section>

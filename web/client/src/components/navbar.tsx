@@ -21,7 +21,9 @@ export default function Navbar() {
         >
           Contract
         </Link>
-        <Button variant="outline">Sign up</Button>
+        <Button variant="outline" asChild>
+          <Link href="/onboarding">Sign up</Link>
+        </Button>
       </nav>
     </header>
   )
