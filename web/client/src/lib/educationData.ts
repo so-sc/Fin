@@ -1,4 +1,4 @@
-const commonFinance = [
+export const commonFinance = [
   {
     title: "Mutual Fund",
     definition:
@@ -21,7 +21,7 @@ const commonFinance = [
       "Think of an ETF as a basket containing various types of fruit. Investors can buy and sell shares (or pieces) of this basket on the market, just like stocks.",
   },
   {
-    title: "DifferenceBetweenMutualFund",
+    title: "Difference Between Mutual Fund",
     definition:
       "Mutual Fund: Typically bought or sold through the fund company at the end of the trading day at the net asset value (NAV). ETF: Traded on stock exchanges throughout the day at market prices, similar to individual stocks.",
     example: " ",
@@ -49,7 +49,7 @@ const commonFinance = [
   },
 ]
 
-const FinancialIndicators = [
+export const financialIndicators = [
   {
     title: "Earnings and Revenue Growth",
     good: "A company with increasing earnings and revenue over time may be considered good. It indicates business growth and profitability.",
@@ -102,21 +102,33 @@ const FinancialIndicators = [
   },
 ]
 
-const MarketConcepts = [
+export const marketConceptsDifferences = [
   {
     title: "Supply and Demand",
-    first:
-      "This represents the willingness of buyers to purchase a stock at different prices. Factors influencing demand include investors' expectations, economic conditions, and company performance.",
-    second:
-      "This represents the willingness of sellers to sell a stock at different prices. Shareholders may decide to sell for various reasons, such as profit-taking or changing investment goals.",
+    title1: "Supply",
+    title2: "Demand",
+    differences: [
+      {
+        first:
+          "This represents the willingness of buyers to purchase a stock at different prices. Factors influencing demand include investors' expectations, economic conditions, and company performance.",
+        second:
+          "This represents the willingness of sellers to sell a stock at different prices. Shareholders may decide to sell for various reasons, such as profit-taking or changing investment goals.",
+      },
+    ],
   },
   {
     title: "Bidding and Asking Prices",
-    first: "The highest price a buyer is willing to pay for a stock.",
-    second: "The lowest price a seller is willing to accept for a stock.",
+    title1: "Bidding",
+    title2: "Asking Prices",
+    differences: [
+      {
+        first: "The highest price a buyer is willing to pay for a stock.",
+        second: "The lowest price a seller is willing to accept for a stock.",
+      },
+    ],
   },
 ]
-const MarketConcepts2 = [
+export const MarketConcepts2 = [
   {
     title: "Matching of Buyers and Sellers",
     description:
@@ -125,7 +137,7 @@ const MarketConcepts2 = [
   {
     title: "Continuous Adjustment",
     description:
-      "Prices are constantly adjusting based on new information, market sentiment, and changes in supply and demand. Stock prices can change rapidly during market hours.",
+      "Prices are export constantly adjusting based on new information, market sentiment, and changes in supply and demand. Stock prices can change rapidly during market hours.",
   },
   {
     title: "Market Orders and Limit Orders",
@@ -148,7 +160,7 @@ const MarketConcepts2 = [
       "Some traders use technical analysis to predict future price movements based on historical price patterns, trends, and trading volumes.",
   },
 ]
-const MarketParticipants = [
+export const MarketParticipants = [
   {
     title: "Market Participants",
     IndividualInvestors:
@@ -160,7 +172,7 @@ const MarketParticipants = [
   },
 ]
 
-const MarketLiquiditgy = [
+export const MarketLiquiditgy = [
   {
     title: "Market Liquidity",
     HighLiquidity:
@@ -169,7 +181,7 @@ const MarketLiquiditgy = [
   },
 ]
 
-const MarketConditions = [
+export const MarketConditions = [
   {
     title: "Bull Market",
     Characteristics:
@@ -194,7 +206,7 @@ const MarketConditions = [
   },
 ]
 
-const Duration = [
+export const Duration = [
   {
     Duration:
       "Bull and bear markets can last for varying durations. Bull markets may persist for several months or even years, driven by prolonged economic expansion. Bear markets can be relatively short-lived during corrections or extend for an extended period during recessions.",
@@ -207,7 +219,7 @@ const Duration = [
   },
 ]
 
-const cyclical = [
+export const cyclical = [
   {
     CyclicalNature:
       "Financial markets typically experience both bull and bear markets over time, reflecting the cyclical nature of economic and market conditions. The transitions between bull and bear markets are influenced by a variety of factors, including economic indicators, central bank policies, and global events.",
