@@ -13,6 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import Link from "next/link"
 import { FormEvent, useState } from "react"
 
 export default function Onboarding() {
@@ -201,6 +202,12 @@ export default function Onboarding() {
             <Button className="w-full" type="submit">
               Submit
             </Button>
+            <p className="text-center">
+              Go to{" "}
+              <Link href="/dashboard" className="underline">
+                Dashboard
+              </Link>
+            </p>
           </form>
         </CardContent>
       </Card>
