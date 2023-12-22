@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState } from "react"
 import { AudioRecorder, useAudioRecorder } from "react-audio-voice-recorder"
 
@@ -12,7 +11,6 @@ export default function TextToSpeech() {
     const audio = document.createElement("audio")
     audio.src = url
     audio.controls = true
-    document.body.appendChild(audio)
 
     const recognition = new (window as any).webkitSpeechRecognition()
 
@@ -30,12 +28,10 @@ export default function TextToSpeech() {
       console.error("Speech recognition error", event.error)
     }
 
-    // Feed the audio blob to the speech recognition API
     const audioBlob = new Blob([blob], { type: "audio/wav" })
     const audioUrl = URL.createObjectURL(audioBlob)
     const audioElement = new Audio(audioUrl)
-    audioElement.play()
-    recognition.start()
+    console.log({ audioElement, audioBlob, audioUrl })
   }
 
   return (

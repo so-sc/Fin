@@ -103,8 +103,6 @@ export default function Component() {
           </div>
         </section>
       </main>
-
-      <TextToSpeech />
     </div>
   )
 }
