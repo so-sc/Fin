@@ -23,9 +23,9 @@ export default function Component() {
               <Button asChild>
                 <Link href="/education">Get Started</Link>
               </Button>
-              <Button asChild variant="outline">
+              <Button asChild variant="ghost">
                 <Link href="https://text-2-speech-rudra.netlify.app/">
-                  Text to Speech
+                  Speech to Text
                 </Link>
               </Button>
             </div>
